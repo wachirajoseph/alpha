@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'League Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h3 {
+    font-size: 20px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+
+h6 {
+    font-size: 18px;
+    font-weight: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin: 40px 0;
+}
+
+body{
+    width: 100%;
+}
+
+
+/*header starts*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+
+/*header ends*/
+
+/*navbar starts*/
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(8, 3, 3);
+    transition: 0.4 ease;
+
+}
+
+#navbar li a:hover,
+#navbar li a.active
+ {
+    color: crimson;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: crimson;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+/*navbar ends*/
+
+
+/*Home page*/
+#hero{
+    background-image: url("image/hero4.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 30% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4{
+    padding-bottom: 18px;
+}
+
+#hero h1{
+    color: crimson;
+}
+
+#hero button{
+    background-image: url("image/button.png");
+    background-color: transparent;
+    color:#222;
+    border: 0;
+    padding: 19px 70px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    transition: 0.2 ease; 
+}
+
+#hero button:hover{
+    color:crimson;
+    font-size: 18px;
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+#feature .fe-box{
+    padding: 20px 15px;
+    text-align: center;
+    width: 170px;
+    box-shadow:20px 20px 40px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    margin: 15 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow:10px 10px 55px rgba(0, 0, 0, 0.1)  ;
+}
+
+
+#feature .fe-box img{
+width: 100%;
+margin-bottom:15px ;
+}
+
+
+#feature .fe-box h6{
+display: inline-block;
+padding:9px 8px 6px 10px;
+color: crimson;
+background-color: rgb(244, 186, 186);
+border-radius:6px ;
+line-height: 2px;
+}
+
+
